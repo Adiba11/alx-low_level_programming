@@ -1,17 +1,21 @@
 #include "holberton.h"
-
-
 /**
- * main - a simple program that outputs "Holberton"
- * Return: 0 on success
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char str[] = "Holberton\n";
-	int i = 0;
+	char *sh = "Holberton";
 
 
-	while (str[i] != '\0')
-		_putchar(str[i++]);
+	while (*sh)
+	{
+		_putchar(*sh);
+		sh++;
+	}
+	_putchar('\n');
+
+
 	return (0);
 }
