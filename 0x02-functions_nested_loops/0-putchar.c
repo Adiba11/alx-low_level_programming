@@ -2,15 +2,16 @@
 
 
 /**
- * _isupper - return if c is uppercase
- *
- * @c: integer to examine
- *
- * Return: 1 if upper, 0 otherwise
+ * main - a simple program that outputs "Holberton"
+ * Return: 0 on success
  */
-int _isupper(int c)
+int main(void)
 {
-	if (c >= 'A' && c <= 'Z')
-		return (1);
+	char str[] = "Holberton\n";
+	int i = 0;
+
+
+	while (str[i] != '\0')
+		_putchar(str[i++]);
 	return (0);
 }
